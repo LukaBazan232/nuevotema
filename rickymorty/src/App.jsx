@@ -1,10 +1,10 @@
-import { Character } from "./components/Character/Character";
+import { AllCharacters } from "./components/Character/Character";
 function App() {
   return (
     <>
 
     
-     <Character />
+     <AllCharacters/>
 
     </>
   )

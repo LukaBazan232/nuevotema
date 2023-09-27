@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import "./Character.css"
-export function Character(){
+import { useCharacter } from "../../hooks/useCharacter"
 
-    const [character,setCharacter] = useState([])
+export const AllCharacters = () => {
+
+    const {getAllCharacters,allCharacters} = useCharacter();
 
             useEffect (()=>{
-                fetch('https://rickandmortyapi.com/api/character')
-                .then(response => response.json())
-                .then(data => setCharacter(data.results));
-
-            },[setCharacter])
+                getAllCharacters();
+            },[]);
 
 
 
@@ -18,11 +17,11 @@ export function Character(){
         //useEffect y useState Hooks
     <>    
         
-        <ul>
+        <ul className="taper">
     
          {
-                character.map((item,index) =>(
-                 <li key ={index}>
+                allCharacters.map((item,index) =>(
+                 <li key ={index} >
                      <h3>{item.name}</h3>
                      <p>{item.status}</p>
                       <img src ={item.image} alt = ""/>

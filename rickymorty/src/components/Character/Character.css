@@ -2,5 +2,38 @@
 { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    list-style: none;
+   
+}
+.taper2
+{
+    display: flex;
+    flex-direction: row;  
+    padding: 1em; 
+    padding-top: 5em;
+    background-color:rgb(59, 57, 57);
+   
 
+}
+.taper3
+{
+    margin-left: 1em;
+}
+
+.titulo
+{
+ display: flex;
+ justify-content: center;
+ font-family: sans-serif;
+}
+.botones
+{
+display: flex;
+justify-content: flex-end;
+
+}
+.botones2
+{
+ border: none;
 }

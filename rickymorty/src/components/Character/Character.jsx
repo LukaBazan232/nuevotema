@@ -38,7 +38,7 @@ export const AllCharacters = () => {
                     <li key ={index}  >
                     <div className="taper2">
                         <img src ={item.image} alt = ""/>
-                        <div className ="taper3">   
+                        <div className ="taper3">  
                         <h3>{item.name}</h3>
                         <p>{item.status}</p>
                         </div>
@@ -47,17 +47,17 @@ export const AllCharacters = () => {
                  
              ))
          }
-    
+        <footer>
+                <div className="final">
+                <h1>hika</h1>
+                </div>
+
+
+        </footer>  
     
          </ul>
 
-         <div className="final">
-
-                
-
-
-
-         </div>
+            
          </div>
     </>     
     )

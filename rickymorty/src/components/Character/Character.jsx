@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import "./Character.css"
 import { useCharacter } from "../../hooks/useCharacter"
+import { Footer } from "../Footer/footer";
 
 export const AllCharacters = () => {
 
@@ -20,15 +21,7 @@ export const AllCharacters = () => {
         
         <div className="CAJAGIGANTE">
 
-        <div className="botones">
-
-            <button className="botones2" > Docs </button>
-            <button className="botones2"> About </button>
-            <button > SUPPORT US </button>
-
-        </div>
-        <div className="titulo"> <h1> Rick and Morty API </h1> </div>
-
+        
         <ul className="taper">
         
          {
@@ -47,19 +40,11 @@ export const AllCharacters = () => {
                  
              ))
          }
-        <footer>
-                <div className="final">
-                <h1>hika</h1>
-                </div>
+        </ul>  
 
-
-        </footer>  
-    
-         </ul>
-
-            
+        <Footer/>
          </div>
     </>     
-    )
+    );
 
-}
+};

@@ -25,6 +25,8 @@
     padding: 1em;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    border-bottom-right-radius:15px ;
+    border-top-right-radius: 15px;
 }
 .infor
 {
@@ -52,6 +54,8 @@ grid-gap: 1em;
 img
 {
     width: 10em;
+    border-bottom-left-radius:15px ;
+    border-top-left-radius: 15px;
 }
 .footer
 {
@@ -75,7 +79,7 @@ h3
 }
 .sacarEspacio
 {
-    margin-top: 60em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-top: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }

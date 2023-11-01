@@ -12,13 +12,11 @@ export const AllCharacters = () => {
             },[]);
 
 
-
+                
     return(
 
         //useEffect y useState Hooks
-    <>    
-        
-        
+    <>           
         <div className="CAJAGIGANTE">
 
         
@@ -26,14 +24,17 @@ export const AllCharacters = () => {
         
          {
             
-                allCharacters.map((item,index) =>(
+                allCharacters.map((personaje,index) =>(
                     
                     <li key ={index}  >
                     <div className="taper2">
-                        <img src ={item.image} alt = ""/>
+                        <img src ={personaje.image} alt = ""/>
                         <div className ="taper3">  
-                        <h3>{item.name}</h3>
-                        <p>{item.status}</p>
+                        <h3>{personaje.name}</h3>                        
+                        <p>{personaje.status} - {personaje.species} </p>
+                        <p>Last known location: </p>
+                        <p> {personaje.origin.name} </p>
+                        <p> episodes </p>
                         </div>
                     </div>   
                  </li> 

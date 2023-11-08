@@ -11,9 +11,17 @@ export const AllCharacters = () => {
                 getAllCharacters();
             },[]);
 
-
+                function getEpisodes(episodes){
+                    console.log(episodes)
+                    episodes.map((episodio) => {
+                        const num = episodio.slice(40)
+                        console.log(num)
+                    })
+                }
                 
     return(
+
+
 
         //useEffect y useState Hooks
     <>           
@@ -34,7 +42,7 @@ export const AllCharacters = () => {
                         <p>{personaje.status} - {personaje.species} </p>
                         <p>Last known location: </p>
                         <p> {personaje.origin.name} </p>
-                        <p> episodes </p>
+                        <p className ="pulsador" onClick= {()=>getEpisodes(personaje.episode)} > episodes </p>
                         </div>
                     </div>   
                  </li> 
